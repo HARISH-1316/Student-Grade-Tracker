@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+body{
+  	background-image: linear-gradient(to bottom,#ceebfd,#b1dae7,#87cefa);
+}
+
+div[class="logo"]{
+	img{
+	 	vertical-align: middle;
+	}
+	span{
+		
+		font-family: sans-serif;
+	}
+	
+	margin-left: -10px;
+	margin-right: -8px;
+	background-color: #002a7c;
+ 	
+		
+}
+
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+
+}
+
+.dropdown-content a {
+
+  background-color: #87CEFA;
+  color: black;
+  padding: 14px 25px;
+  font-size: 15px;
+  text-decoration: blink;
+  display: block;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+
+
+.dropdown-content a:hover {background-color: #ADD8E6}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {font-size: 15px;
+							color: #00BFFF;
+							}
+
+
+.a1,.a2,.a3,.a4,.a5{
+	position: relative;
+  	display: inline-block;
+
+}
+ .ab,.dropbtn {
+  background-color: #002a7c;
+  color: white;
+  padding: 12px;
+  font-size: 13px;
+  border-color: #002a7c;
+  border-radius: 5px;
+}
+pre[class="info"]{
+	background-color: #0077A5;
+	color: white;
+	text-align: center;
+	font-family: calibri(body);
+	font-size: 14px;
+	padding:10px;
+	margin-left:-10px;
+	margin-right:-8px;
+	margin-top:-10px;
+	margin-bottom:0px;
+	
+	
+}
+div[class="a1"]:hover .ab {font-size: 15px;
+							color: #00BFFF;
+							}
+div[class="a2"]:hover .ab {font-size: 15px;
+							color: #00BFFF;
+							}
+div[class="a3"]:hover .ab {font-size: 15px;
+							color: #00BFFF;
+							}
+div[class="a4"]:hover .ab {font-size: 15px;
+							color: #00BFFF;
+							}
+div[class="a5"]:hover .ab {font-size: 15px;
+							color: #00BFFF;
+							}
+
+
+input[type=text], select {
+
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4f74e3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1f49c7;
+}
+.DataFull{
+	margin: auto;
+	width: 75%;
+}
+input[type="submit"]{
+	margin-left: 150px;
+	width: 75%;
+}
+form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  padding-top: 10px;
+  padding-left:15px;
+
+  margin-right: 20px;
+  margin-left : 20px;
+  margin-top : 20px;
+  border: 1.8px solid #808080;
+  
+}
+div[class="logo"]{
+	img{
+	 	vertical-align: middle;
+	}
+	text-align: center;
+	border: 2px solid black;
+
+		
+}
+
+.Data1{
+	display: flex;
+}
+.Insert{
+	z-index: -1;
+	background-color: #a6a6a6;
+	padding: 15px;
+	margin-left: -15px;
+	margin-right: -50px;
+	margin-top: -10px;
+	
+}
+
+</style>
+<body>
+
+<pre class="info">&#128383; 022 - 59621XX    &#128386;info@abcIntenational.com     SENIOR SECONDARY CBSE SCHOOL AFFILIATION NO.11390XX | NAVI MUMBAI - 400 703</pre> 
+
+<div class="logo">
+	<h2 style="display: inline-block">
+		<img src="https://img.pikbest.com/png-images/20241014/modern-school-logo-vector-design-artwork_10962285.png!w700wp" height="80px" width="80px">
+		<span>ABC International School</span>
+	
+		
+		
+		<div class="a1" style="margin-left:140px;">
+			<a href="index.html"><button class="ab" onclick="<a href='index.html'> </a>">Home</button></a>
+			
+		</div>
+		<div class="a2" style="margin-left:40px;">
+			<button class="ab">News & Events</button>
+		</div>
+		<div class="a3" style="margin-left:40px;">
+			<button class="ab">Co-Curricular Activities</button>
+		</div>
+		<div class="a4" style="margin-left:40px;">
+			<button class="ab">Academics</button>
+		</div>
+		
+		<div class="dropdown" style="margin-left:40px;">
+  			<button class="dropbtn" >Student Grade</button>
+  				<div class="dropdown-content">
+    				<a href="Add.html" >Insert Data</a>
+    				
+    				<a href="Read.html" >Read Data</a>
+    				
+    				<a href="Admin.html" >Admin</a>
+  				</div>
+		</div>
+		<div class="a5" style="margin-left:40px;">
+			<button class="ab">Contact Us</button>
+		</div>
+		
+		
+	</h2>
+</div>
+
+
+<div class="DataFull">
+	
+  <form action="MyServlet" method="Post">
+  <input type="hidden" name="action" value="add">
+  <h2 class="Insert">Insert Student Data</h2>
+  	<div class="Data1">
+  		
+	  	<div style="padding: 10px 20px;">
+		  	<label for="rollno">   Student ID</label><br>
+		    <input type="text" id="fname" name="studentid" size="70" placeholder="Enter Your Student ID...">
+	  	</div>
+	  	<div style="padding: 10px 20px;">
+		    <label for="fname">   Full Name</label><br>
+		    <input type="text" id="fname" name="fullname" size="70" placeholder="Enter Your Full Name...">
+	    </div>
+	</div>
+	<div class="Data1">
+	<div style="padding: 10px 20px;">
+		    <label for="fname">   Gender</label><br>
+		    <input type="text" id="fname" name="gender" size="60" placeholder="Enter Your Gender...">
+	    </div>
+	  	<div style="padding: 10px 20px;">
+		  	<label for="rollno">   Date of Birth</label><br><br>
+		    <input type="date" id="fname" name="dob" size="70" placeholder="Enter Your Date of Birth...">
+	  	</div>
+	</div>
+	<div class="Data1">
+	  	<div style="padding: 10px 20px;">
+		  	<label for="rollno">   Age</label><br>
+		    <input type="text" id="fname" name="age" size="70" placeholder="Enter Your Age...">
+	  	</div>
+	  	<div style="padding: 10px 20px;">
+		  	<label for="rollno">   Mathematics</label><br>
+		    <input type="text" id="fname" name="maths" size="70" placeholder="Enter Marks Obtained in Mathematics...">
+	  	</div>
+	</div>
+	<div class="Data1">
+	  	<div style="padding: 10px 20px;">
+		    <label for="fname">   Physics</label><br>
+		    <input type="text" id="fname" name="physics" size="70" placeholder="Enter Marks Obtained in Physics...">
+	    </div>
+	  	<div style="padding: 10px 20px;">
+		  	<label for="rollno">   Chemistry</label><br>
+		    <input type="text" id="fname" name="chemistry" size="70" placeholder="Enter Marks Obtained in Chemistry...">
+	  	</div>
+	</div>
+	<div class="Data1">
+	  	<div style="padding: 10px 20px;">
+		  	<label for="rollno">   Computer Science</label><br>
+		    <input type="text" id="fname" name="cs" size="70" placeholder="Enter Marks Obtained in Computer Science">
+	  	</div>
+	  	<div style="padding: 10px 20px;">
+		    <label for="fname">   English</label><br>
+		    <input type="text" id="fname" name="english" size="70" placeholder="Enter Marks Obtained in English...">
+	    </div>
+	</div>
+    
+    <input type="submit" name="submit" value="Insert">
+  </form>
+</div>
+
+</body>
+</html>
+
+
